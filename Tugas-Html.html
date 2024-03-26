@@ -4,29 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Cina</title>
-    
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8e1; /* Cream background color */
+            color: #333; /* Default text color */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #c78af5; /* Amber background color for header */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        /* Navigation menu styling */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #a28e54; /* Amber color on hover */
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex; /* Menggunakan Flexbox */
+            justify-content: space-between; /* Mengatur jarak antara elemen menjadi sama besar */
+            align-items: center; /* Memposisikan elemen secara vertikal di tengah */
+        }
+
+        /* Section styling */
+        section {
+            padding: 40px 0;
+        }
+
+        section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        section p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Gallery image styling */
+        .gallery-img {
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Blog article styling */
+        article {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        article h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        article p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        /* Contact info styling */
+        .contact-info {
+            text-align: center;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        /* Style for left and right images */
+        .left-img,
+        .right-img {
+            width: 45%; /* Set lebar gambar */
+            margin-bottom: 20px; /* Jarak bawah antara gambar dengan teks */
+        }
+
+        /* Responsive styling for small screens */
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Tumpuk elemen pada tata letak vertikal di layar kecil */
+                justify-content: center; /* Posisikan elemen di tengah */
+                align-items: flex-start; /* Memposisikan elemen secara horizontal di kiri */
+            }
+
+            .left-img,
+            .right-img {
+                width: 100%; /* Gunakan lebar penuh pada layar kecil */
+            }
+        }
+    </style>
 </head>
 <body>
 
 <header>
     <div class="container">
-        <h1>Website</h1>
+        <h1>Welcome To My Personal Website</h1>
     </div>
 </header>
 
 <header id="header">
     <div class="container">
-
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#home">Home</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li class="menu-active"><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </div>
-  </header>
+</header>
 
 <section id="home">
     <div class="container">
@@ -39,32 +173,46 @@
     <div class="container">
         <h2>Gallery</h2>
         <p>Berikut adalah kumpulan foto-foto:</p>
-        <img src="bunaken.jpg" width="200" height="150" alt="Foto Cina 1">
-        <img src="bunaken.jpg" width="200" height="150" alt="Foto Cina 2">
-        <img src="bunaken.jpg" width="200" height="150" alt="Foto Cina 3">
-        <img src="bunaken.jpg" width="200" height="150" alt="Foto Cina 4">
+        <img src="unsrat.jpg" class="gallery-img left-img" alt="Foto Cina 1">
+        <img src="unsrat2.jpeg" class="gallery-img right-img" alt="Foto Cina 2">
+        <img src="unsrat3.jpg" class="gallery-img left-img" alt="Foto Cina 3">
+        <img src="unsrat4.jpg" class="gallery-img right-img" alt="Foto Cina 4">
     </div>
 </section>
 
 <section id="blog">
     <div class="container">
-        <h2>Blog</h2>
+        <h2>Blog Artikel</h2>
         <article>
-            <h3>NAMA</h3>
-            <p>Ezra Lolombulan</p>
+            <h3>Tentang Universitas Sam Ratulangi (UNSRAT)</h3>
+            <p>Universitas Sam Ratulangi (UNSRAT) adalah sebuah perguruan tinggi negeri yang terletak di Kota Manado, Sulawesi Utara, Indonesia. UNSRAT didirikan pada tahun 1965 dan telah berkembang menjadi salah satu universitas terkemuka di wilayah Indonesia Timur. Universitas ini menawarkan berbagai program studi di berbagai bidang, termasuk ilmu alam, sosial, humaniora, dan teknik.</p>
+            <p>Alamat kampus UNSRAT:</p>
+            <p>Jl. Kampus UNSRAT, Kecamatan Mapanget<br>
+            Kota Manado, Sulawesi Utara<br>
+            Indonesia</p>
+    
+        </article>
+        
+        <!-- Artikel Tambahan 1 -->
+        <article>
+            <h3>Jalan-jalan ke Cina: Pengalaman Seru di Kota Shanghai</h3>
+            <p>Shanghai adalah salah satu kota terbesar di Cina, terkenal dengan kehidupan metropolitan modernnya yang dinamis. Dalam kunjungan saya ke sana, saya terpesona dengan keindahan Bund, jantung keuangan Shanghai yang menawarkan pemandangan megah gedung-gedung pencakar langit.</p>
+            <p>Selain itu, saya juga menikmati wisata kuliner di Yu Garden, tempat di mana Anda bisa mencicipi aneka makanan tradisional Cina yang lezat. Pengalaman belanja di Nanjing Road juga tidak kalah menarik dengan ragam produk fashion dan suvenir khas Shanghai.</p>
+        </article>
+
+        <!-- Artikel Tambahan 2 -->
+        <article>
+            <h3>Keajaiban Alam di China: Menjelajahi Gunung Huangshan</h3>
+            <p>Gunung Huangshan, atau yang dikenal sebagai Yellow Mountain, adalah salah satu dari Lima Gunung Suci Taois di Cina. Saya sangat terkesan dengan keindahan alamnya, terutama saat matahari terbit atau terbenam, di mana awan dan kabut menyelimuti puncak-puncak gunung yang menjulang tinggi.</p>
+            <p>Perjalanan mendaki menuju puncak-puncak ini juga memberikan pengalaman yang tak terlupakan, dengan pemandangan jurang yang mengagumkan dan air terjun yang mempesona. Bagi para pecinta alam dan petualang, Gunung Huangshan adalah destinasi yang wajib dikunjungi saat berada di Cina.</p>
         </article>
     </div>
 </section>
 
+
 <section id="contact">
     <div class="container">
         <h2>Contact</h2>
-        <p>Silakan hubungi Saya</p>
-        <p>Nama: Saya siapa?</p>
-        <p>Email: Contoh@gmail.com</p>
-        <p>Telepon: 082222222222</p>
-    </div>
-</section>
-
-</body>
-</html>
+        <p>Telepon: +62 431 855655<br>
+            Email: info@unsrat.ac.id</p>
+       
