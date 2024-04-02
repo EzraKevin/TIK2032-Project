@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    color: #0056b3;
+}
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+/* Navigation menu styles */
+#nav-menu-container {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.nav-menu li {
+    margin-right: 20px;
+}
+.nav-menu li:last-child {
+    margin-right: 0;
+}
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.nav-menu li a:hover {
+    color: #ffcc00;
+}
+/* Gallery image styles */
+.gallery-img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.gallery-img:hover {
+    transform: scale(1.1);
+}
+.left-img {
+    float: left;
+    margin-right: 10px;
+}
+.right-img {
+    float: right;
+    margin-left: 10px;
+}
+/* Blog article styles */
+article {
+    margin-bottom: 30px;
+}
+article h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+article p {
+    color: #666;
+    margin-bottom: 10px;
+}
+/* Contact section styles */
+#contact {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+#contact h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+#contact p {
+    color: #666;
+    margin-bottom: 10px;
+}
