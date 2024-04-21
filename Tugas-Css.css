@@ -1,18 +1,20 @@
 body {
+    background-image: url('bground.jpg'); 
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
-a {
-    color: #007bff;
+ {
+    color: #FEFAF6;
     text-decoration: none;
 }
 a:hover {
-    color: #0056b3;
+    color: #FEFAF6;
 }
+/* Header styles */
 header {
-    background-color: #333;
+    background-color: #102C57;
     color: #fff;
     padding: 10px 0;
 }
@@ -20,6 +22,14 @@ header {
     width: 80%;
     margin: 0 auto;
 }
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+p {
+    color: #ffffff;
+}
+/* Navigation menu styles */
 #nav-menu-container {
     display: flex;
     justify-content: space-between;
@@ -44,6 +54,7 @@ header {
 .nav-menu li a:hover {
     color: #ffcc00;
 }
+/* Gallery image styles */
 .gallery-img {
     width: 50%;
     height: auto;
@@ -62,26 +73,37 @@ header {
     float: right;
     margin-left: 10px;
 }
+/* Blog article styles */
 article {
     margin-bottom: 30px;
 }
 article h3 {
-    color: #333;
+    color: #ffffff;
     margin-bottom: 10px;
 }
-article p {
-    color: #666;
+article p, h1, h2, h4 {
+    color: #ffffff;
     margin-bottom: 10px;
 }
+/* Contact section styles */
 #contact {
-    background-color: #f4f4f4;
+    background-color: #102C57;
     padding: 20px;
 }
 #contact h2 {
-    color: #333;
+    color: #ffffff;
     margin-bottom: 10px;
 }
 #contact p {
     color: #666;
     margin-bottom: 10px;
 }
+.gallery-img {
+    transition: transform 0.3s ease;
+    cursor: pointer; /* Menjadikan cursor berbentuk tangan saat dihover */
+}
+
+.gallery-img:hover {
+    transform: scale(0.9); /* Efek pengecilan saat dihover */
+}
+
